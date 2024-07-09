@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ITF\User\blog\**" />
+    <Compile Remove="Response\User\blog\**" />
+    <EmbeddedResource Remove="ITF\User\blog\**" />
+    <EmbeddedResource Remove="Response\User\blog\**" />
+    <None Remove="ITF\User\blog\**" />
+    <None Remove="Response\User\blog\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspose.Email" Version="24.6.0" />
+    <PackageReference Include="IronPython" Version="3.4.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="8.0.0" />
+    <PackageReference Include="MySql.Data" Version="8.2.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="SixLabors.ImageSharp" Version="3.1.4" />
+    <PackageReference Include="System.Net.Primitives" Version="4.3.1" />
+    <PackageReference Include="ZstdSharp.Port" Version="0.7.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="BL\User\blog\" />
+    <Folder Include="Request\User\blog\" />
+    <Folder Include="Response\Admin\product\variation\" />
+  </ItemGroup>
+
+</Project>
